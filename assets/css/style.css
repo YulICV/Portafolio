@@ -255,12 +255,13 @@ ul a:hover {
     gap: 16px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
     width: 368px;
     gap: 8px;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 
 .contenido-card {
