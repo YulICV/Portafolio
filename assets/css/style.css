@@ -321,19 +321,6 @@ ul a:hover {
     height: 95%;
 }
 
-.imagenP1,
-.imagenP2 {
-    height: 370px;
-    width: 700px;
-    margin-right: 20px;
-    margin-left: 20px;
-    box-sizing: content-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff33;
-    border-radius: 4px;
-}
 
 .cardP1,
 .cardP2 {
@@ -351,10 +338,32 @@ ul a:hover {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.imagenP1,
+.imagenP2 {
+    height: 370px;
+    width: 700px;
+    margin-right: 20px;
+    margin-left: 20px;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff33;
+    border-radius: 4px;
+}
 
 .card-content {
     text-align: left;
     /* Alinea el texto del contenido a la izquierda */
+}
+
+
+
+.imagenP2{
+    order: 1;
+}
+.P2{
+    order: 0;
 }
 
 .card-content h5 {
