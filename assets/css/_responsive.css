@@ -1,4 +1,557 @@
+@media screen and (max-width:768px) {
 
+    header,
+    section,
+    footer {
+        max-width: 100%;
+        margin: 0 auto;
+        border: 2px solid #00054d;
+    }
+
+    header {
+        justify-content: space-between;
+        padding: 16px 32px;
+        height: 56px;
+        align-items: center;
+        /* Alinea los elementos verticalmente en el centro */
+        display: flex;
+        /* Establece el header como un contenedor flexible */
+    }
+
+    nav {
+        flex-grow: 1;
+        /* Hace que el nav ocupe todo el espacio disponible */
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        /* Alinea los elementos de la lista al final del nav */
+        gap: 16px;
+        /* Espacio entre los elementos de la lista */
+    }
+
+    nav ul li {
+        margin-right: 16px;
+    }
+
+    nav ul li:not(:last-child) {
+        display: none;
+    }
+
+    nav #logo,
+    nav ul li:last-child {
+        display: inline-block;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18.78px;
+        color: #464646;
+    }
+
+    #logo {
+        gap: 8px;
+        display: flex;
+        align-items: center;
+    }
+
+    #logo img {
+        width: 24px;
+        height: 24px;
+    }
+
+    /*parte 1*/
+    #sobreMi {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 210px;
+        padding: 32px;
+        gap: 32px;
+    }
+
+    .info {
+        gap: 8px;
+        order: 0;
+    }
+
+    #sobreMi p:first-child {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 25.83px;
+        color: #464646;
+    }
+
+    #sobreMi p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18.78px;
+    }
+
+    #profile-image {
+        width: 146px;
+        height: 146px;
+        order: 1;
+    }
+
+    /*parte2*/
+    #sobremi {
+        height: 286;
+        padding: 32px;
+        gap: 10px;
+    }
+
+    .sobre {
+        gap: 16px;
+    }
+
+    .sobre h4 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 25.83px;
+        color: #464646;
+    }
+
+    .sobre p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16.44px;
+        color: #464646;
+        margin-top: 16px;
+        margin-bottom: 0;
+        max-width: 89%;
+        margin-left: 20px;
+    }
+
+    #sobremi img {
+        margin-top: 5px;
+        width: 140px;
+        height: 60px;
+
+    }
+
+    /*SKILLS - HOBBIES*/
+    #skills,
+    #hobbies {
+        gap: 32px;
+        padding: 32px;
+        height: auto;
+    }
+
+    #skills h4,
+    #hobbies h4 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 25.83px;
+        text-align: center;
+        color: #464646;
+        padding: 10px;
+    }
+
+    .habilidades,
+    .pasatiempos {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        gap: 8px;
+        /* Ajustado para el espacio entre tarjetas */
+        justify-content: space-evenly;
+        /* Distribuye uniformemente los elementos */
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tarjeta {
+        width: 224px;
+        height: 118px;
+        padding: 8px;
+        gap: 8px;
+        background-color: #FFFFFF;
+        border-radius: 4px;
+        margin-bottom: 0px;
+        box-sizing: border-box;
+        /* Evita que el relleno y el borde aumenten el tamaño total */
+    }
+
+    .info-tarjeta {
+        margin-top: auto;
+    }
+
+    .tarjeta i {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 36.8px;
+        text-align: center;
+        color: #464646;
+    }
+
+    .tarjeta p {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18.78px;
+        color: #464646;
+    }
+
+    /*FOOTER - CONTACTO*/
+    /*Contacto*/
+    #contacto {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 64px;
+        background-color: #EAF2FD;
+    }
+
+    #contacto img {
+        border-radius: 4px;
+        width: 480px;
+        height: 593px;
+        margin-right: 20px;
+    }
+
+    .formulario {
+        max-width: 670px;
+    }
+
+    .formulario .info {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 10px;
+        gap: 20px;
+        margin-left: 0;
+    }
+
+    .formulario .info h6,
+    .formulario .info p {
+        margin: 0;
+        gap: 10px;
+        /* Remove default margins */
+    }
+
+    .formulario h6 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38px;
+        text-align: left;
+        color: #464646;
+        margin-bottom: 20px;
+    }
+
+
+    .formulario p {
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        text-align: left;
+        color: #464646;
+        margin-bottom: 20px;
+        /* Ajustado el margen inferior para el párrafo */
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* Alinea los elementos del formulario en una columna */
+        margin-top: 10px;
+        gap: 11px;
+    }
+
+    form button {
+        margin-bottom: 30px;
+    }
+
+    form input,
+    form textarea {
+        font-family: 'Raleway', sans-serif;
+        height: 56px;
+        width: 100%;
+        /* Utiliza el ancho completo del contenedor del formulario */
+        margin-bottom: 31px;
+        border-radius: 4px;
+        box-sizing: border-box;
+        border-bottom: 2px solid #C8C8C8;
+        cursor: text;
+        padding: 10px;
+        position: relative;
+        /* Añado posición relativa al contenedor */
+    }
+
+    form textarea {
+        height: 120px;
+    }
+
+    form input::placeholder,
+    form textarea::placeholder {
+        color: #464646;
+        padding-left: 5px;
+        padding-top: 5px;
+        transition: color 0.3s, transform 0.3s;
+        position: absolute;
+        /* Establece la posición relativa */
+        top: 10px;
+        left: 10px;
+        /* Asegura que el placeholder comience en su posición original */
+
+    }
+
+    form input:focus::placeholder,
+    form textarea:focus::placeholder {
+        color: #2a7ae4;
+        transform: translateY(-10px);
+    }
+
+    form input:focus,
+    form textarea:focus {
+        border-bottom: 2px solid #2a7ae4;
+        color: #2a7ae4;
+        outline: none;
+        font-size: 12px;
+    }
+
+    form textarea:focus {
+        padding-top: 15px;
+    }
+
+    form button {
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        text-align: left;
+        width: 144px;
+        height: 51px;
+        background-color: #2a7ae4;
+        color: white;
+        padding: 16px;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    form button:hover {
+        background-color: #3f8ef5;
+    }
+
+    /*EDUCACION*/
+
+    #educacion {
+        background-color: #EAF2FD;
+        padding: 32px;
+        gap: 32px;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    #educacion h4 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 25.83px;
+        text-align: center;
+        color: #464646;
+        margin-bottom: 20px;
+    }
+
+    .tarjetero {
+        width: 704px;
+        gap: 16px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 224px;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+
+    .contenido-card {
+        background-color: #FFFFFF;
+        width: 224px;
+        height: 118px;
+        padding: 16px;
+        gap: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* Centramos verticalmente */
+        align-items: center;
+        /* Centramos horizontalmente */
+    }
+
+    .imagenlogo {
+        width: 84px;
+        height: 58px;
+    }
+
+    .pie-card h6 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18.78px;
+        color: #464646;
+    }
+
+    .pie-card p {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16.44px;
+        color: #464646;
+    }
+
+
+    /*PROYECTOS*/
+    #proyectos {
+        padding: 32px;
+        gap: 16px;
+        align-items: center;
+        text-align: center;
+        background-color: #f5f5f5;
+    }
+
+    #proyectos h4 {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 25.83px;
+        color: #464646;
+    }
+
+    .project {
+        width: 704px;
+        gap: 64px;
+        align-items: center;
+    }
+
+    #proyectos img {
+        width: 85%;
+        height: 95%;
+    }
+
+    .imagenP1,
+    .imagenP2 {
+        height: 370px;
+        width: 700px;
+        margin-right: 20px;
+        margin-left: 20px;
+        box-sizing: content-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff33;
+        border-radius: 4px;
+    }
+
+    .cardP1,
+    .cardP2 {
+        padding: 20px;
+        display: flex;
+        width: 704px;
+        height: 427px;
+        flex-direction: column;
+        align-items: center;
+        /* Centra los elementos verticalmente */
+        justify-content: center;
+        /* Centra los elementos horizontalmente */
+        text-align: center;
+        /* Centra el texto */
+        box-sizing: content-box;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .card-content {
+        text-align: left;
+        /* Alinea el texto del contenido a la izquierda */
+
+    }
+
+    .card-content h5 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18.78px;
+        color: #464646;
+        margin-bottom: 5px;
+    }
+
+    .card-content p {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16.44px;
+        color: #464646;
+    }
+
+    .botones {
+        display: flex;
+        justify-content: left;
+        /* Centra los botones horizontalmente */
+        gap: 16px;
+        margin-top: 10px;
+    }
+
+    .b1,
+    .b2 {
+        transition: background-color 0.3s, color 0.3s, border 0.3s;
+    }
+
+    .b1 {
+        border: 1px solid #2a7ae4;
+        width: 108px;
+        height: 40px;
+        padding: 12px 16p 12px 16px;
+        /* Reducido el relleno */
+        color: #2A7AE4;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16.44px;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+
+    .b1:hover {
+        background-color: #2a7ae4;
+        color: #ffffff;
+    }
+
+    .b2 {
+        background-color: #2a7ae4;
+        width: 96px;
+        height: 40px;
+        gap: 10px;
+        padding: 12px 16px 12px 16px;
+        /* Reducido el relleno */
+        color: #ffffff;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16.44px;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+
+    .b2:hover {
+        background-color: transparent;
+        border: 1px solid #2a7ae4;
+        color: #2A7AE4;
+    }
+
+
+}
 
 
 
